@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+
+     <link rel="stylesheet" href="portfolio.css">
+    
+</head>
+<body>
+    <!--Navbar Start-->
+ <nav class="navbar">
+        <div class="logo">WebTech</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="dark-mode-toggle" id="darkModeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+    <!--Navbar Ends-->
+    <!--Home Starts-->
+    <section id="home">
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Kanika Sharma</h1>
+                <p >A Full Stack Developer passionate about creating dynamic  and responsive websites. 
+                    <br> Let's work on your web project together! <br> Share the details, and I'll help you with the coding or design
+                </p> 
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="/img/My_Image.jpeg" alt="Kanika Sharma">
+            </div>
+        </section>
+    </section>
+    <!--Home Ends-->
+    <!--About Starts-->
+      <section id="about">
+    <div class="about-container">
+        <!-- Left side div -->
+        <div class="about-left">
+            <h1>About Me</h1>
+            <button onclick="window.open('/About-page/About.html', '_blank')">More About Me</button>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram fa-beat-fade"></i></a>
+                <a href="https://wa.me/7217512706" target="_blank"><i class="fa-brands fa-whatsapp fa-beat-fade"></i></a>
+                <a href="https://www.linkedin.com/in/kanika-sharma-5107312a2" target="_blank"><i class="fa-brands fa-linkedin fa-beat-fade"></i></a>
+            </div>
+        </div>
+
+        <!-- Right side div -->
+        <div class="about-right">
+            <p>
+                Hi, I'm Kanika Sharma, a dedicated Full Stack Developer with a passion for building dynamic and engaging websites. My expertise spans across front-end and back-end technologies, ensuring that my projects are not only visually stunning but also highly functional. When I'm not coding, I enjoy diving into the latest tech trends and finding innovative ways to improve my craft. Let's connect and create something amazing together!
+            </p>
+        </div>
+    </div>
+      </section>
+<!--About Ends-->
+<!--Project Starts-->
+
+<section id="projects">
+    <h1>My Projects</h1>
+
+    <!-- Filter buttons -->
+    <div class="filter-container">
+        <button class="filter-btn" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('web')">Web Development</button>
+        <button class="filter-btn" onclick="filterProjects('design')">Design</button>
+        <button class="filter-btn" onclick="filterProjects('other')">Other</button>
+    </div>
+
+    <!-- Project cards container -->
+
+    <div class="projects-container">
+        <!-- Example project cards -->
+        <div class="project-card" data-category="web">
+            <img src="/img/Real-chatapp.jpg" alt="Real Time Chat Application Project" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Real Time Chat Application</h3>
+                <p class="project-description">A dynamic web application built using modern technologies.</p>
+                <a href="projects/project1/index.html" target="_blank" class="project-link">View Project</a>
+                
+            </div>
+        </div>
+        
+        <div class="project-card" data-category="design">
+            <img src="/img/HotelBookingSystem.jpg" alt="Hotel Booking" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Hotel Booking System</h3>
+                <p class="project-description">A creative design project showcasing my Frontend and Backend Skills.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        
+        <div class="project-card" data-category="design">
+            <img src="/img/Podcast-site.jpg" alt="Podcast Site" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Podcast Site</h3>
+                <p class="project-description">An innovative site using WordPress  with elementor.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="other">
+            <img src="/img/Weather.jpg" alt="Weather Forecast App" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Weather Forecast App</h3>
+                <p class="project-description">An innovative site using WordPress  with elementor.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="web">
+            <img src="/img/Yoga-website.jpg" alt="Yoga-Project" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Yoga Website</h3>
+                <p class="project-description">An innovative site using WordPress  with elementor.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="other">
+            <img src="/img/To-do-app.jpg" alt="TO DO APP" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Simple Project - To Do App</h3>
+                <p class="project-description">An innovative site using WordPress  with elementor.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+        <div class="project-card" data-category="design">
+            <img src="/img/blog.jpg" alt="Blog Website" class="project-image">
+            <div class="project-content">
+                <h3 class="project-title">Blog Website </h3>
+                <p class="project-description">An innovative site using WordPress  with elementor.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+<!--Projects Ends-->
+    <!--Services Starts-->
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <div class="container">
+            <div class="left-side">
+                <h2>Expertise Areas</h2>
+                <p>We specialize in a variety of fields to provide comprehensive solutions tailored to your needs. Explore our key areas of expertise and how we can help elevate your business.</p>
+                <button onclick="openModal()">View All Services</button>
+            </div>
+            <div class="right-side">
+                <h3>Services I Provide:</h3>
+                <div class="service-item">
+                    <h4>Full Stack Developer</h4>
+                    <p>As a full stack developer, we provide end-to-end solutions for web development, including both front-end and back-end services. Whether you need a new website, application development, or maintenance of existing systems, we have the expertise to deliver high-quality results.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Digital Marketing</h4>
+                    <p>Our digital marketing services are designed to enhance your online presence and drive more traffic to your website. From SEO and content marketing to social media management and PPC advertising, we offer a full suite of services to help you achieve your marketing goals.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Data Entry Operator</h4>
+                    <p>Efficient and accurate data entry is crucial for maintaining smooth operations. Our skilled data entry operators handle a range of tasks, including data input, data management, and database maintenance, ensuring your information is organized and accessible.</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="servicesModal">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal()">X</button>
+                <h2>All Our Services</h2>
+                <p>Explore the full range of services we offer to meet all your business needs:</p>
+                <div class="service-item">
+                    <img src="/img/Graphic-design.jpg" alt="Graphic Design">
+                    <div>
+                        <h4>Graphic Design</h4>
+                        <p>Our graphic design team creates visually appealing designs for print and digital media, including logos, brochures, and advertising materials to help establish your brand identity.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/img/web-hosting.jpg" alt="Web Hosting">
+                    <div>
+                        <h4>Web Hosting</h4>
+                        <p>Reliable web hosting services to ensure your website is always available and performs optimally. We offer scalable hosting solutions with excellent uptime and support.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/img/blog.jpg" alt="Blog">
+                    <div>
+                        <h4>Blog Services</h4>
+                        <p>Provide Blog services to help you navigate complex business challenges. Our consultants provide strategic insights and actionable recommendations to drive your success.</p>
+                    </div>
+                </div>
+               
+                <div class="service-item">
+                    <img src="/img/SEO.jpg" alt="SEO Support">
+                    <div>
+                        <h4>SEO Services</h4>
+                        <p> support SEO services to reach more web-traffic.  we ensure your Website is always running efficiently.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="/img/content.jpg" alt="Content Creation">
+                    <div>
+                        <h4>Content Creation</h4>
+                        <p>High-quality content creation services, including blog posts, articles, and multimedia content to engage your audience and enhance your online presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services Ends-->
+      <!--Contact Page Start-->  
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+                <div id="responseMessage" class="message"></div>
+            </form>
+        </div>
+    </section>
+    <!--Contact Page End-->
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h4>Contact Me</h4>
+                <ul>
+                    <li>Email: <a href="mailto:karnik01apr@gmail.com">karnik01apr@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+91 7217512706">+91 7217512706</a></li>
+                    <li>Address: 14  Ambedkar Chowk, Rishikesh, India</li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-column">
+                <h4>Follow Me</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> KAnikaSharma. All Rights Reserved.</p>
+            <p>Designed by <a href="#">KanikaSharma</a></p>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTopBtn"><i class="fas fa-chevron-up"></i></button>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
